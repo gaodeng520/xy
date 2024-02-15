@@ -23,7 +23,7 @@
         "servers": [
             {
                 "tag": "proxydns",
-                "address": "https://[2001:4860:4860::8888]/dns-query",
+                "address": "https://8.8.8.8/dns-query",
                 "detour": "select"
             },
             {
@@ -113,18 +113,18 @@
             "default": "auto",
             "outbounds": [
                 "auto",
-                "vless-6360352380hax.localdomain",
-                "vmess-6360352380hax.localdomain",
-                "hy2-6360352380hax.localdomain",
-                "tuic5-6360352380hax.localdomain"
+                "vless-dci-39705",
+                "vmess-dci-39705",
+                "hy2-dci-39705",
+                "tuic5-dci-39705"
             ]
         },
         {
             "type": "vless",
-            "tag": "vless-6360352380hax.localdomain",
-            "server": "2a01:4f8:211:2312:1234:4321:9e94:1",
-            "server_port": 45548,
-            "uuid": "3adb2e10-7e82-4b0f-9c07-a710a5f8f950",
+            "tag": "vless-dci-39705",
+            "server": "64.110.71.219",
+            "server_port": 30502,
+            "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
@@ -135,18 +135,18 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "PFN71067WxmUFmP6k9vUsiiOjHBbHIvdfjaY17Qh-UU",
-                    "short_id": "a524251c"
+                    "public_key": "BE97IqAvgHTpx9GOTf1M9GGuzjY-Nfc5WeMQoNCkNAA",
+                    "short_id": "d68bb353"
                 }
             }
         },
         {
-            "server": "testeu.midstu.link",
-            "server_port": 443,
-            "tag": "vmess-6360352380hax.localdomain",
+            "server": "dcikr12.midstu.link",
+            "server_port": 30503,
+            "tag": "vmess-dci-39705",
             "tls": {
                 "enabled": true,
-                "server_name": "testeu.midstu.link",
+                "server_name": "dcikr12.midstu.link",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -156,25 +156,25 @@
             "transport": {
                 "headers": {
                     "Host": [
-                        "testeu.midstu.link"
+                        "dcikr12.midstu.link"
                     ]
                 },
-                "path": "3adb2e10-7e82-4b0f-9c07-a710a5f8f950-vm",
+                "path": "2c5a9182-71da-43e5-a36a-73fa8fcbe487-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "auto",
-            "uuid": "3adb2e10-7e82-4b0f-9c07-a710a5f8f950"
+            "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487"
         },
         {
             "type": "hysteria2",
-            "tag": "hy2-6360352380hax.localdomain",
-            "server": "testeu.midstu.link",
-            "server_port": 21818,
-            "password": "3adb2e10-7e82-4b0f-9c07-a710a5f8f950",
+            "tag": "hy2-dci-39705",
+            "server": "dcikr12.midstu.link",
+            "server_port": 30504,
+            "password": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
             "tls": {
                 "enabled": true,
-                "server_name": "testeu.midstu.link",
+                "server_name": "dcikr12.midstu.link",
                 "insecure": false,
                 "alpn": [
                     "h3"
@@ -183,11 +183,11 @@
         },
         {
             "type": "tuic",
-            "tag": "tuic5-6360352380hax.localdomain",
-            "server": "testeu.midstu.link",
-            "server_port": 24184,
-            "uuid": "3adb2e10-7e82-4b0f-9c07-a710a5f8f950",
-            "password": "3adb2e10-7e82-4b0f-9c07-a710a5f8f950",
+            "tag": "tuic5-dci-39705",
+            "server": "dcikr12.midstu.link",
+            "server_port": 30505,
+            "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
+            "password": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "udp_over_stream": false,
@@ -195,7 +195,7 @@
             "heartbeat": "10s",
             "tls": {
                 "enabled": true,
-                "server_name": "testeu.midstu.link",
+                "server_name": "dcikr12.midstu.link",
                 "insecure": false,
                 "alpn": [
                     "h3"
@@ -218,10 +218,10 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "vless-6360352380hax.localdomain",
-                "vmess-6360352380hax.localdomain",
-                "hy2-6360352380hax.localdomain",
-                "tuic5-6360352380hax.localdomain"
+                "vless-dci-39705",
+                "vmess-dci-39705",
+                "hy2-dci-39705",
+                "tuic5-dci-39705"
             ],
             "url": "https://cp.cloudflare.com/generate_204",
             "interval": "1m",
