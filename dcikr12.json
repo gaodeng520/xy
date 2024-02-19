@@ -122,7 +122,7 @@
         {
             "type": "vless",
             "tag": "vless-dci-39705",
-            "server": "64.110.71.219",
+            "server": "dcikr12.midstu.link",
             "server_port": 30502,
             "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
             "flow": "xtls-rprx-vision",
