@@ -1,3 +1,4 @@
 sn://wg?eNoNzj1uwjAYAFBTiYUrdOkOsv19ToxtiSUoUYBURYIAq0MIbQlKxY_AbDkPYunGxNXgneC9EUJAKQrgUa2o-H-8E3KHLlKQlFNkAlsouTRel3MDwI1SK2VAC2HyLOemsCIzReFpBqhug-CUyPiyWWvHhtUAXBJgOh3bUerschoGyS_XZyx9Fu57t2y7-Oq3I4jO4Wekc_czwthnMEkPl5gPj7PKh288jYu1q3o1aRKCIDogoePfG692v6yOeVTa3epjbnd_17p-AlNoOUY
 hy2://3adb2e10-7e82-4b0f-9c07-a710a5f8f950@testeu.midstu.link:21818/?mport=21818%2C3000-3010&sni=testeu.midstu.link#haxeu-hy2
 hy2://2c5a9182-71da-43e5-a36a-73fa8fcbe487@dcikr12.midstu.link:30504/?sni=dcikr12.midstu.link#dcikr12-hy2
+vless://2c5a9182-71da-43e5-a36a-73fa8fcbe487@dcikr12.midstu.link:30502/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.yahoo.com&fp=chrome&security=reality&pbk=BE97IqAvgHTpx9GOTf1M9GGuzjY-Nfc5WeMQoNCkNAA&sid=d68bb353#ygkkk-vl-reality
