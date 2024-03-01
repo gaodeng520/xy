@@ -23,7 +23,7 @@
         "servers": [
             {
                 "tag": "proxydns",
-                "address": "https://8.8.8.8/dns-query",
+                "address": "tls://8.8.8.8/dns-query",
                 "detour": "select"
             },
             {
@@ -113,18 +113,19 @@
             "default": "auto",
             "outbounds": [
                 "auto",
-                "vless-dci-39705",
-                "vmess-dci-39705",
-                "hy2-dci-39705",
-                "tuic5-dci-39705"
+                "vless-dci-47538",
+                "vmess-dci-47538",
+                "hy2-dci-47538",
+                "tuic5-dci-47538"
             ]
         },
         {
             "type": "vless",
-            "tag": "vless-dci-39705",
-            "server": "dcikr12.midstu.link",
-            "server_port": 30502,
-            "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
+            "tag": "vless-dci-47538",
+            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
+            "server_port": 49802,
+            "uuid": "6a56a27c-d477-4885-9474-dc9c87ff6053",
+            "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
@@ -135,47 +136,48 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "BE97IqAvgHTpx9GOTf1M9GGuzjY-Nfc5WeMQoNCkNAA",
-                    "short_id": "d68bb353"
+                    "public_key": "Ye-H9V4ef5zYSwzEL8ix4pzM4BdUPi8AATYIvmv9O2g",
+                    "short_id": "44183f60"
                 }
             }
         },
         {
-            "server": "dcikr12.midstu.link",
-            "server_port": 30503,
-            "tag": "vmess-dci-39705",
+            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
+            "server_port": 49803,
+            "tag": "vmess-dci-47538",
             "tls": {
-                "enabled": true,
-                "server_name": "dcikr12.midstu.link",
+                "enabled": false,
+                "server_name": "www.bing.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
             },
+            "packet_encoding": "packetaddr",
             "transport": {
                 "headers": {
                     "Host": [
-                        "dcikr12.midstu.link"
+                        "www.bing.com"
                     ]
                 },
-                "path": "2c5a9182-71da-43e5-a36a-73fa8fcbe487-vm",
+                "path": "6a56a27c-d477-4885-9474-dc9c87ff6053-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "auto",
-            "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487"
+            "uuid": "6a56a27c-d477-4885-9474-dc9c87ff6053"
         },
         {
             "type": "hysteria2",
-            "tag": "hy2-dci-39705",
-            "server": "dcikr12.midstu.link",
-            "server_port": 30504,
-            "password": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
+            "tag": "hy2-dci-47538",
+            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
+            "server_port": 49804,
+            "password": "6a56a27c-d477-4885-9474-dc9c87ff6053",
             "tls": {
                 "enabled": true,
-                "server_name": "dcikr12.midstu.link",
-                "insecure": false,
+                "server_name": "www.bing.com",
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]
@@ -183,11 +185,11 @@
         },
         {
             "type": "tuic",
-            "tag": "tuic5-dci-39705",
-            "server": "dcikr12.midstu.link",
-            "server_port": 30505,
-            "uuid": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
-            "password": "2c5a9182-71da-43e5-a36a-73fa8fcbe487",
+            "tag": "tuic5-dci-47538",
+            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
+            "server_port": 49805,
+            "uuid": "6a56a27c-d477-4885-9474-dc9c87ff6053",
+            "password": "6a56a27c-d477-4885-9474-dc9c87ff6053",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "udp_over_stream": false,
@@ -195,8 +197,8 @@
             "heartbeat": "10s",
             "tls": {
                 "enabled": true,
-                "server_name": "dcikr12.midstu.link",
-                "insecure": false,
+                "server_name": "www.bing.com",
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]
@@ -218,12 +220,12 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "vless-dci-39705",
-                "vmess-dci-39705",
-                "hy2-dci-39705",
-                "tuic5-dci-39705"
+                "vless-dci-47538",
+                "vmess-dci-47538",
+                "hy2-dci-47538",
+                "tuic5-dci-47538"
             ],
-            "url": "https://cp.cloudflare.com/generate_204",
+            "url": "https://www.gstatic.com/generate_204",
             "interval": "1m",
             "tolerance": 50,
             "interrupt_exist_connections": false
