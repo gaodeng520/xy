@@ -113,18 +113,18 @@
             "default": "auto",
             "outbounds": [
                 "auto",
-                "vless-dci-47538",
-                "vmess-dci-47538",
-                "hy2-dci-47538",
-                "tuic5-dci-47538"
+                "vless-instance-b99f53d70a854bc78e4734fd6063c917",
+                "vmess-instance-b99f53d70a854bc78e4734fd6063c917",
+                "hy2-instance-b99f53d70a854bc78e4734fd6063c917",
+                "tuic5-instance-b99f53d70a854bc78e4734fd6063c917"
             ]
         },
         {
             "type": "vless",
-            "tag": "vless-dci-47538",
-            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
-            "server_port": 49802,
-            "uuid": "6a56a27c-d477-4885-9474-dc9c87ff6053",
+            "tag": "vless-instance-b99f53d70a854bc78e4734fd6063c917",
+            "server": "168.138.149.167",
+            "server_port": 25313,
+            "uuid": "c9e3f698-7860-49ba-8e49-4b73a55552bd",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
@@ -136,15 +136,15 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Ye-H9V4ef5zYSwzEL8ix4pzM4BdUPi8AATYIvmv9O2g",
-                    "short_id": "44183f60"
+                    "public_key": "ZwP7Tz8Kw6LPJryoN_zD33AKFdHDhfhjTHohYw82j1M",
+                    "short_id": "e57cf5c5"
                 }
             }
         },
         {
-            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
-            "server_port": 49803,
-            "tag": "vmess-dci-47538",
+            "server": "168.138.149.167",
+            "server_port": 2052,
+            "tag": "vmess-instance-b99f53d70a854bc78e4734fd6063c917",
             "tls": {
                 "enabled": false,
                 "server_name": "www.bing.com",
@@ -161,19 +161,19 @@
                         "www.bing.com"
                     ]
                 },
-                "path": "6a56a27c-d477-4885-9474-dc9c87ff6053-vm",
+                "path": "c9e3f698-7860-49ba-8e49-4b73a55552bd-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "auto",
-            "uuid": "6a56a27c-d477-4885-9474-dc9c87ff6053"
+            "uuid": "c9e3f698-7860-49ba-8e49-4b73a55552bd"
         },
         {
             "type": "hysteria2",
-            "tag": "hy2-dci-47538",
-            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
-            "server_port": 49804,
-            "password": "6a56a27c-d477-4885-9474-dc9c87ff6053",
+            "tag": "hy2-instance-b99f53d70a854bc78e4734fd6063c917",
+            "server": "168.138.149.167",
+            "server_port": 4541,
+            "password": "c9e3f698-7860-49ba-8e49-4b73a55552bd",
             "tls": {
                 "enabled": true,
                 "server_name": "www.bing.com",
@@ -185,11 +185,11 @@
         },
         {
             "type": "tuic",
-            "tag": "tuic5-dci-47538",
-            "server": "kr-seoul-oracle-d9ce50.ip1.shop",
-            "server_port": 49805,
-            "uuid": "6a56a27c-d477-4885-9474-dc9c87ff6053",
-            "password": "6a56a27c-d477-4885-9474-dc9c87ff6053",
+            "tag": "tuic5-instance-b99f53d70a854bc78e4734fd6063c917",
+            "server": "168.138.149.167",
+            "server_port": 41577,
+            "uuid": "c9e3f698-7860-49ba-8e49-4b73a55552bd",
+            "password": "c9e3f698-7860-49ba-8e49-4b73a55552bd",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "udp_over_stream": false,
@@ -220,10 +220,10 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "vless-dci-47538",
-                "vmess-dci-47538",
-                "hy2-dci-47538",
-                "tuic5-dci-47538"
+                "vless-instance-b99f53d70a854bc78e4734fd6063c917",
+                "vmess-instance-b99f53d70a854bc78e4734fd6063c917",
+                "hy2-instance-b99f53d70a854bc78e4734fd6063c917",
+                "tuic5-instance-b99f53d70a854bc78e4734fd6063c917"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "1m",
