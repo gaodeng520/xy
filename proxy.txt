@@ -1,2 +1,3 @@
 sn://wg?eNoNzj1uwjAYAFBTiYUrdOkOsv19ToxtiSUoUYBURYIAq0MIbQlKxY_AbDkPYunGxNXgneC9EUJAKQrgUa2o-H-8E3KHLlKQlFNkAlsouTRel3MDwI1SK2VAC2HyLOemsCIzReFpBqhug-CUyPiyWWvHhtUAXBJgOh3bUerschoGyS_XZyx9Fu57t2y7-Oq3I4jO4Wekc_czwthnMEkPl5gPj7PKh288jYu1q3o1aRKCIDogoePfG692v6yOeVTa3epjbnd_17p-AlNoOUY
 vless://2d13d4a7-67f2-4733-a307-3a64f3c7987a@kr-seoul-oracle-07dc3e.ip1.shop:65352/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.yahoo.com&fp=chrome&security=reality&pbk=FhyTQRWl8pBx4BfPLVdTR6GnD8T64QMLqI0V0mElDmY&sid=8e9adac7#vl-reality-dci-48527
+hy2://2d13d4a7-67f2-4733-a307-3a64f3c7987a@kr-seoul-oracle-07dc3e.ip1.shop:65354/?insecure=1&sni=www.bing.com#hy2-dci-48527
