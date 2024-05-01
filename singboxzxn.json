@@ -138,8 +138,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "FnBPt0QyAZwbO7D4bv2mvh3ld67JJr8lxUIdwrymDWw",
-                    "short_id": "02e24626"
+                    "public_key": "MKAXYVvdC_PQ3vC6bft5xQSfq5K5ZO2WWyz2mJ4o43c",
+                    "short_id": "17c9a6c2"
                 }
             }
         },
@@ -208,7 +208,7 @@
         },
         {
             "server": "www.visa.com.sg",
-            "server_port": 8443,
+            "server_port": 443,
             "tag": "vmess-tls-argo固定-dci-53583",
             "tls": {
                 "enabled": true,
