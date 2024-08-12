@@ -23,7 +23,7 @@
         "servers": [
             {
                 "tag": "proxydns",
-                "address": "tls://8.8.8.8/dns-query",
+                "address": "tls://[2001:4860:4860::8888]/dns-query",
                 "detour": "select"
             },
             {
@@ -110,23 +110,21 @@
         {
             "tag": "select",
             "type": "selector",
-            "default": "auto",
+            "default": "vmess-6360352380hax.localdomain",
             "outbounds": [
                 "auto",
-                "vless-dci-53583",
-                "vmess-dci-53583",
-                "hy2-dci-53583",
-                "tuic5-dci-53583",
-                "vmess-tls-argo固定-dci-53583",
-                "vmess-argo固定-dci-53583"
+                "vless-6360352380hax.localdomain",
+                "vmess-6360352380hax.localdomain",
+                "hy2-6360352380hax.localdomain",
+                "tuic5-6360352380hax.localdomain"
             ]
         },
         {
             "type": "vless",
-            "tag": "vless-dci-53583",
-            "server": "kr-seoul-oracle-b0566e.ip1.shop",
-            "server_port": 46702,
-            "uuid": "401d6d90-10be-4cff-89c5-b1429cca91b1",
+            "tag": "vless-6360352380hax.localdomain",
+            "server": "2602:294:0:dc:1234:1234:f8e3:1",
+            "server_port": 20639,
+            "uuid": "4db994ac-aabe-41da-982e-553b79f27ce1",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
@@ -138,18 +136,18 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "MKAXYVvdC_PQ3vC6bft5xQSfq5K5ZO2WWyz2mJ4o43c",
-                    "short_id": "17c9a6c2"
+                    "public_key": "QcnFxABc4X2jyjISdRoWuR0uNnp7LTY3lwddaLS45WU",
+                    "short_id": "a03a64f9"
                 }
             }
         },
         {
-            "server": "kr-seoul-oracle-b0566e.ip1.shop",
-            "server_port": 46703,
-            "tag": "vmess-dci-53583",
+            "server": "ip.cloudflare.182682.xyz",
+            "server_port": 8880,
+            "tag": "vmess-6360352380hax.localdomain",
             "tls": {
                 "enabled": false,
-                "server_name": "www.bing.com",
+                "server_name": "haxus.lyads.cloudns.org",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -160,22 +158,22 @@
             "transport": {
                 "headers": {
                     "Host": [
-                        "www.bing.com"
+                        "haxus.lyads.cloudns.org"
                     ]
                 },
-                "path": "401d6d90-10be-4cff-89c5-b1429cca91b1-vm",
+                "path": "4db994ac-aabe-41da-982e-553b79f27ce1-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "auto",
-            "uuid": "401d6d90-10be-4cff-89c5-b1429cca91b1"
+            "uuid": "4db994ac-aabe-41da-982e-553b79f27ce1"
         },
         {
             "type": "hysteria2",
-            "tag": "hy2-dci-53583",
-            "server": "kr-seoul-oracle-b0566e.ip1.shop",
-            "server_port": 46704,
-            "password": "401d6d90-10be-4cff-89c5-b1429cca91b1",
+            "tag": "hy2-6360352380hax.localdomain",
+            "server": "2602:294:0:dc:1234:1234:f8e3:1",
+            "server_port": 31030,
+            "password": "4db994ac-aabe-41da-982e-553b79f27ce1",
             "tls": {
                 "enabled": true,
                 "server_name": "www.bing.com",
@@ -187,11 +185,11 @@
         },
         {
             "type": "tuic",
-            "tag": "tuic5-dci-53583",
-            "server": "kr-seoul-oracle-b0566e.ip1.shop",
-            "server_port": 46705,
-            "uuid": "401d6d90-10be-4cff-89c5-b1429cca91b1",
-            "password": "401d6d90-10be-4cff-89c5-b1429cca91b1",
+            "tag": "tuic5-6360352380hax.localdomain",
+            "server": "2602:294:0:dc:1234:1234:f8e3:1",
+            "server_port": 45243,
+            "uuid": "4db994ac-aabe-41da-982e-553b79f27ce1",
+            "password": "4db994ac-aabe-41da-982e-553b79f27ce1",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "udp_over_stream": false,
@@ -205,60 +203,6 @@
                     "h3"
                 ]
             }
-        },
-        {
-            "server": "www.visa.com.sg",
-            "server_port": 443,
-            "tag": "vmess-tls-argo固定-dci-53583",
-            "tls": {
-                "enabled": true,
-                "server_name": "kr10.midstu.link",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "kr10.midstu.link"
-                    ]
-                },
-                "path": "401d6d90-10be-4cff-89c5-b1429cca91b1-vm",
-                "type": "ws"
-            },
-            "type": "vmess",
-            "security": "auto",
-            "uuid": "401d6d90-10be-4cff-89c5-b1429cca91b1"
-        },
-        {
-            "server": "www.visa.com.sg",
-            "server_port": 8880,
-            "tag": "vmess-argo固定-dci-53583",
-            "tls": {
-                "enabled": false,
-                "server_name": "kr10.midstu.link",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "kr10.midstu.link"
-                    ]
-                },
-                "path": "401d6d90-10be-4cff-89c5-b1429cca91b1-vm",
-                "type": "ws"
-            },
-            "type": "vmess",
-            "security": "auto",
-            "uuid": "401d6d90-10be-4cff-89c5-b1429cca91b1"
         },
         {
             "tag": "direct",
@@ -276,12 +220,10 @@
             "tag": "auto",
             "type": "urltest",
             "outbounds": [
-                "vless-dci-53583",
-                "vmess-dci-53583",
-                "hy2-dci-53583",
-                "tuic5-dci-53583",
-                "vmess-tls-argo固定-dci-53583",
-                "vmess-argo固定-dci-53583"
+                "vless-6360352380hax.localdomain",
+                "vmess-6360352380hax.localdomain",
+                "hy2-6360352380hax.localdomain",
+                "tuic5-6360352380hax.localdomain"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "1m",
