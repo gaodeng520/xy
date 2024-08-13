@@ -116,7 +116,10 @@
                 "vless-6360352380hax.localdomain",
                 "vmess-6360352380hax.localdomain",
                 "hy2-6360352380hax.localdomain",
-                "tuic5-6360352380hax.localdomain"
+                "tuic5-6360352380hax.localdomain",
+                "vmess-tls-argo固定-6360352380hax.localdomain",
+                "vmess-argo固定-6360352380hax.localdomain",
+                "点测试，哪个能用选哪个"
             ]
         },
         {
@@ -124,7 +127,7 @@
             "tag": "vless-6360352380hax.localdomain",
             "server": "2602:294:0:dc:1234:1234:f8e3:1",
             "server_port": 20639,
-            "uuid": "4db994ac-aabe-41da-982e-553b79f27ce1",
+            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
@@ -161,23 +164,23 @@
                         "haxus.lyads.cloudns.org"
                     ]
                 },
-                "path": "4db994ac-aabe-41da-982e-553b79f27ce1-vm",
+                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "auto",
-            "uuid": "4db994ac-aabe-41da-982e-553b79f27ce1"
+            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
         },
         {
             "type": "hysteria2",
             "tag": "hy2-6360352380hax.localdomain",
-            "server": "2602:294:0:dc:1234:1234:f8e3:1",
+            "server": "haxus.lyads.cloudns.org",
             "server_port": 31030,
-            "password": "4db994ac-aabe-41da-982e-553b79f27ce1",
+            "password": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
             "tls": {
                 "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
+                "server_name": "haxus.lyads.cloudns.org",
+                "insecure": false,
                 "alpn": [
                     "h3"
                 ]
@@ -186,10 +189,10 @@
         {
             "type": "tuic",
             "tag": "tuic5-6360352380hax.localdomain",
-            "server": "2602:294:0:dc:1234:1234:f8e3:1",
+            "server": "haxus.lyads.cloudns.org",
             "server_port": 45243,
-            "uuid": "4db994ac-aabe-41da-982e-553b79f27ce1",
-            "password": "4db994ac-aabe-41da-982e-553b79f27ce1",
+            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
+            "password": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "udp_over_stream": false,
@@ -197,12 +200,93 @@
             "heartbeat": "10s",
             "tls": {
                 "enabled": true,
-                "server_name": "www.bing.com",
-                "insecure": true,
+                "server_name": "haxus.lyads.cloudns.org",
+                "insecure": false,
                 "alpn": [
                     "h3"
                 ]
             }
+        },
+        {
+            "server": "www.visa.com.sg",
+            "server_port": 8443,
+            "tag": "vmess-tls-argo固定-6360352380hax.localdomain",
+            "tls": {
+                "enabled": true,
+                "server_name": "argo-hax-us.lyads.cloudns.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "packet_encoding": "packetaddr",
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "argo-hax-us.lyads.cloudns.org"
+                    ]
+                },
+                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
+                "type": "ws"
+            },
+            "type": "vmess",
+            "security": "zero",
+            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
+        },
+        {
+            "server": "www.visa.com.sg",
+            "server_port": 443,
+            "tag": "点测试，哪个能用选哪个",
+            "tls": {
+                "enabled": true,
+                "server_name": "argo-hax-us.lyads.cloudns.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "packet_encoding": "packetaddr",
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "argo-hax-us.lyads.cloudns.org"
+                    ]
+                },
+                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
+                "type": "ws"
+            },
+            "type": "vmess",
+            "security": "zero",
+            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
+        },
+        {
+            "server": "www.visa.com.sg",
+            "server_port": 8880,
+            "tag": "vmess-argo固定-6360352380hax.localdomain",
+            "tls": {
+                "enabled": false,
+                "server_name": "argo-hax-us.lyads.cloudns.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "packet_encoding": "packetaddr",
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "argo-hax-us.lyads.cloudns.org"
+                    ]
+                },
+                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
+                "type": "ws"
+            },
+            "type": "vmess",
+            "security": "auto",
+            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
         },
         {
             "tag": "direct",
@@ -223,7 +307,9 @@
                 "vless-6360352380hax.localdomain",
                 "vmess-6360352380hax.localdomain",
                 "hy2-6360352380hax.localdomain",
-                "tuic5-6360352380hax.localdomain"
+                "tuic5-6360352380hax.localdomain",
+                "vmess-tls-argo固定-6360352380hax.localdomain",
+                "vmess-argo固定-6360352380hax.localdomain"
             ],
             "url": "https://www.gstatic.com/generate_204",
             "interval": "1m",
