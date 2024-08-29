@@ -1,6 +1,6 @@
 {
     "log": {
-        "disabled": false,
+        "disabled": true,
         "level": "info",
         "timestamp": true
     },
@@ -110,24 +110,22 @@
         {
             "tag": "select",
             "type": "selector",
-            "default": "vmess-6360352380hax.localdomain",
+            "default": "vmess-tls-argo固定-6360352380hax.localdomain",
             "outbounds": [
                 "auto",
                 "vless-6360352380hax.localdomain",
-                "vmess-6360352380hax.localdomain",
                 "hy2-6360352380hax.localdomain",
                 "tuic5-6360352380hax.localdomain",
                 "vmess-tls-argo固定-6360352380hax.localdomain",
-                "vmess-argo固定-6360352380hax.localdomain",
-                "点测试，哪个能用选哪个"
+                "vmess-argo固定-6360352380hax.localdomain"
             ]
         },
         {
             "type": "vless",
             "tag": "vless-6360352380hax.localdomain",
-            "server": "2602:294:0:dc:1234:1234:f8e3:1",
-            "server_port": 20639,
-            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
+            "server": "2602:294:0:dc:1234:1234:1f9b:1",
+            "server_port": 13326,
+            "uuid": "ce736787-d431-47b0-8335-3f3348d9cf7a",
             "packet_encoding": "xudp",
             "flow": "xtls-rprx-vision",
             "tls": {
@@ -139,44 +137,17 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "QcnFxABc4X2jyjISdRoWuR0uNnp7LTY3lwddaLS45WU",
-                    "short_id": "a03a64f9"
+                    "public_key": "koBzl42QdYQp3pLaCWttIHjRI-pPlELO-LH-eyyYxwA",
+                    "short_id": "ea4b1e14"
                 }
             }
-        },
-        {
-            "server": "ip.cloudflare.182682.xyz",
-            "server_port": 8880,
-            "tag": "vmess-6360352380hax.localdomain",
-            "tls": {
-                "enabled": false,
-                "server_name": "haxus.lyads.cloudns.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "haxus.lyads.cloudns.org"
-                    ]
-                },
-                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
-                "type": "ws"
-            },
-            "type": "vmess",
-            "security": "auto",
-            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
         },
         {
             "type": "hysteria2",
             "tag": "hy2-6360352380hax.localdomain",
             "server": "haxus.lyads.cloudns.org",
-            "server_port": 31030,
-            "password": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
+            "server_port": 53769,
+            "password": "ce736787-d431-47b0-8335-3f3348d9cf7a",
             "tls": {
                 "enabled": true,
                 "server_name": "haxus.lyads.cloudns.org",
@@ -190,9 +161,9 @@
             "type": "tuic",
             "tag": "tuic5-6360352380hax.localdomain",
             "server": "haxus.lyads.cloudns.org",
-            "server_port": 45243,
-            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
-            "password": "01cef5b8-3e0f-49a2-af2f-b3549550922a",
+            "server_port": 40611,
+            "uuid": "ce736787-d431-47b0-8335-3f3348d9cf7a",
+            "password": "ce736787-d431-47b0-8335-3f3348d9cf7a",
             "congestion_control": "bbr",
             "udp_relay_mode": "native",
             "udp_over_stream": false,
@@ -227,39 +198,12 @@
                         "argo-hax-us.lyads.cloudns.org"
                     ]
                 },
-                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
+                "path": "ce736787-d431-47b0-8335-3f3348d9cf7a-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "zero",
-            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
-        },
-        {
-            "server": "www.visa.com.sg",
-            "server_port": 443,
-            "tag": "点测试，哪个能用选哪个",
-            "tls": {
-                "enabled": true,
-                "server_name": "argo-hax-us.lyads.cloudns.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "packet_encoding": "packetaddr",
-            "transport": {
-                "headers": {
-                    "Host": [
-                        "argo-hax-us.lyads.cloudns.org"
-                    ]
-                },
-                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
-                "type": "ws"
-            },
-            "type": "vmess",
-            "security": "zero",
-            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
+            "uuid": "ce736787-d431-47b0-8335-3f3348d9cf7a"
         },
         {
             "server": "www.visa.com.sg",
@@ -281,12 +225,12 @@
                         "argo-hax-us.lyads.cloudns.org"
                     ]
                 },
-                "path": "01cef5b8-3e0f-49a2-af2f-b3549550922a-vm",
+                "path": "ce736787-d431-47b0-8335-3f3348d9cf7a-vm",
                 "type": "ws"
             },
             "type": "vmess",
             "security": "auto",
-            "uuid": "01cef5b8-3e0f-49a2-af2f-b3549550922a"
+            "uuid": "ce736787-d431-47b0-8335-3f3348d9cf7a"
         },
         {
             "tag": "direct",
@@ -305,7 +249,6 @@
             "type": "urltest",
             "outbounds": [
                 "vless-6360352380hax.localdomain",
-                "vmess-6360352380hax.localdomain",
                 "hy2-6360352380hax.localdomain",
                 "tuic5-6360352380hax.localdomain",
                 "vmess-tls-argo固定-6360352380hax.localdomain",
